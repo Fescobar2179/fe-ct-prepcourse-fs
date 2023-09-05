@@ -23,7 +23,9 @@ function numberOfCharacters(string) {
    // Tu código:
    let frecuencia = {};
    for (let i = 0; i < string.length; i++) {
-      if (frecuencia[string[i]]) frecuencia[string[i]] ++;
+      if (frecuencia[string[i]]) {
+         frecuencia[string[i]] ++;
+      }
       else frecuencia[string[i]] = 1;
    }
    let arrayPares = Object.entries(frecuencia); //convierte el objeto a array de pares clave valor   
