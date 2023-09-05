@@ -43,7 +43,9 @@ function capToFront(string) {
    let mayusculas = '';
    let minusculas = '';
    for (let i = 0; i < string.length; i++) {
-      if (string[i] === string[i].toUpperCase()) mayusculas += string[i];
+      if (string[i] === string[i].toUpperCase()) {
+         mayusculas += string[i];
+      }
       else minusculas += string[i];
    }
    return mayusculas + minusculas;
